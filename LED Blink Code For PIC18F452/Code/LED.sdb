@@ -1,0 +1,29 @@
+[p GLOBOPT AUTOSTATIC LFSROK SPACEOPT EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F452 ]
+"22 C:\Users\Saeed\Desktop\LED Blink Code For PIC18F452\Code\code.c
+[v _seconds `uc  1 a 1 fsr1l ]
+[v _seconds `uc  1 a 1 fsr1l ]
+"792 C:\Program Files (x86)\HI-TECH Software\PICC-18\PRO\9.65\include\pic18.h
+[v __delay `(v  1 e 0 0 ]
+"22 C:\Users\Saeed\Desktop\LED Blink Code For PIC18F452\Code\code.c
+[v _delay_sec `(v  1 e 0 0 ]
+"31
+[v _main `(v  1 e 0 0 ]
+"426 C:\Program Files (x86)\HI-TECH Software\PICC-18\PRO\9.65\include\pic18fxx2.h
+[v _TRISB0 `VNb  1 e 0 @31896 ]
+"550
+[v _RB0 `VNb  1 e 0 @31752 ]
+"31 C:\Users\Saeed\Desktop\LED Blink Code For PIC18F452\Code\code.c
+[v _main `(v  1 e 0 0 ]
+{
+"43
+} 0
+"22
+[v _delay_sec `(v  1 e 0 0 ]
+{
+[v _seconds `uc  1 a 1 wreg ]
+[v _seconds `uc  1 a 1 fsr1l ]
+"28
+} 0

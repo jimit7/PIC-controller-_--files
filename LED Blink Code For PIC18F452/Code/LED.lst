@@ -1,0 +1,323 @@
+
+
+HI-TECH Software PRO Macro Assembler (PIC18) V9.65 build 7190 
+                                                       Sun May 20 18:53:16 2012
+
+HI-TECH Software Omniscient Code Generator build 7190
+     1                           	processor	18F452
+     2                           	fnconf	param0,??,?,0
+     3                           	opt	pw 80
+     4                           	opt	pm
+     5                           	psect	text0,global,reloc=2,class=CODE,delta=1
+     6                           	psect	text1,global,reloc=2,class=CODE,delta=1
+     7                           	psect	const,global,reloc=2,class=CODE,delta=1
+     8                           	psect	intsave_regs,global,class=BIGRAM,space=1,
+      +                          delta=1
+     9                           	psect	param0,global,class=BANK0,space=1,delta=1
+    10  000000                     
+    11  000000                     
+    12  000000                     
+    13  000000                     
+    14  000000                     
+    15  000000                     
+    16  000000                     
+    17  000000                     
+    18  000000                     
+    19  000000                     
+    20  000000                     
+    21  000000                     
+    22  000000                     
+    23  000000                     
+    24  000000                     
+    25  000000                     
+    26  000000                     
+    27  000000                     
+    28  000000                     
+    29  000000                     
+    30  000000                     
+    31  000000                     
+    32  000000                     
+    33  000000                     
+    34  000000                     
+    35  000000                     
+    36  000000                     
+    37  000000                     
+    38  000000                     
+    39  000000                     
+    40  000000                     
+    41  000000                     
+    42  000000                     
+    43  000000                     
+    44  000000                     
+    45  000000                     
+    46  000000                     
+    47  000000                     
+    48  000000                     
+    49  000000                     
+    50  000000                     
+    51  000000                     
+    52  000000                     
+    53  000000                     
+    54  000000                     
+    55  000000                     
+    56  000000                     
+    57  000000                     
+    58  000000                     
+    59  000000                     
+    60  000000                     
+    61  000000                     
+    62  000000                     
+    63  000000                     
+    64  000000                     
+    65  000000                     
+    66  000000                     
+    67  000000                     
+    68  000000                     
+    69  000000                     
+    70  000000                     
+    71  000000                     
+    72  000000                     
+    73  000000                     
+    74  000000                     
+    75  000000                     
+    76  000000                     
+    77  000000                     
+    78  000000                     
+    79  000000                     
+    80  000000                     
+    81  000000                     
+    82  000000                     
+    83  000000                     
+    84  000000                     
+    85  000000                     
+    86  000000                     
+    87  000000                     
+    88  000000                     
+    89  000000                     
+    90  000000                     
+    91  000000                     
+    92  000000                     
+    93  000000                     
+    94  000000                     
+    95  000000                     
+    96  000000                     
+    97  000000                     
+    98  000000                     
+    99  000000                     
+   100  000000                     
+   101  000000                     
+   102  000000                     
+   103  000000                     
+   104  000000                     
+   105  000000                     	;#
+   106  000000                     	;#
+   107  000000                     	;#
+   108  000000                     	;#
+   109  000000                     	;#
+   110  000000                     	;#
+   111  000000                     	;#
+   112  000000                     	;#
+   113  000000                     
+   114  000000                     
+   115  000000                     
+   116  000000                     
+   117                           
+   118                           	psect	text0
+   119                           ;Data sizes: Strings 0, constant 0, data 0, bss 
+      +                          0, persistent 0 stack 5
+   120                           ; *************** function _main ***************
+      +                          **
+   121                           ; Defined at:
+   122                           ;		line 31 in file "C:\Users\Saeed\Desktop\LED B
+      +                          link Code For PIC18F452\Code\code.c"
+   123                           ; Parameters:
+   124                           ;		None
+   125                           ; Auto variables:
+   126                           ;		None
+   127                           ; Return value:
+   128                           ;		type: void 
+   129                           ;		size: 0
+   130                           ; Registers used:
+   131                           ;		wreg, fsr0l, fsr1l, fsr2l, status,2, status,0
+      +                          , cstack
+   132                           ; Tracked objects:
+   133                           ;		On entry : 0/0
+   134                           ;		On exit  : 0/0
+   135                           ;		Unchanged: 0/0
+   136                           ; Data sizes:
+   137                           ;		Autos:    0
+   138                           ;		Params:   0
+   139                           ;		Temp:     0
+   140                           ;		Total:    0
+   141                           ; This function calls:
+   142                           ;		_delay_sec
+   143                           ; This function is called by:
+   144                           ;		Startup code after reset
+   145                           ; This function uses a non-reentrant model
+   146                           ; 
+   147  000000                     
+   148                           ;code.c: 30: void main()
+   149                           ;code.c: 31: {
+   150  003FAE                     _main:
+   151                           	opt stack 31
+   152                           ; BSR set to: ?
+   153  003FAE  FFFF               	dw	65535
+   154                           ;code.c: 32: RB0 = 0;
+   155  003FB0  9081               	bcf	3969,0,c	;volatile
+   156                           ;code.c: 33: TRISB0 = 0;
+   157  003FB2  9093               	bcf	3987,0,c	;volatile
+   158                           ;code.c: 35: while(1)
+   159  003FB4                     l110:
+   160  003FB4  FFFF               	dw	65535	; assembler added errata NOP
+   161                           ; BSR set to: ?
+   162                           ;code.c: 36: {
+   163                           ;code.c: 37: RB0 = 1;
+   164  003FB6  8081               	bsf	3969,0,c	;volatile
+   165                           ;code.c: 38: delay_sec(1);
+   166  003FB8  0E01               	movlw	1
+   167  003FBA  ECE4  F01F         	call	_delay_sec
+   168                           ;code.c: 40: RB0 = 0;
+   169  003FBE  9081               	bcf	3969,0,c	;volatile
+   170                           ;code.c: 41: delay_sec(1);
+   171  003FC0  0E01               	movlw	1
+   172  003FC2  ECE4  F01F         	call	_delay_sec
+   173                           ; BSR set to: ?
+   174  003FC6  D7F6               	goto	l110
+   175  003FC8                     __end_of_main:
+   176                           	opt stack 0
+   177                           
+   178                           	psect	text1
+   179                           ; =============== function _main ends ==========
+      +                          ==
+   180                           ; *************** function _delay_sec **********
+      +                          *******
+   181                           ; Defined at:
+   182                           ;		line 22 in file "C:\Users\Saeed\Desktop\LED B
+      +                          link Code For PIC18F452\Code\code.c"
+   183                           ; Parameters:
+   184                           ;		seconds        size:   1reg:   wre	type: unsi
+      +                          gned char 
+   185                           ; Auto variables:
+   186                           ;		i           	       	type: unsigned char 
+   187                           ;		j           	       	type: unsigned char 
+   188                           ; Return value:
+   189                           ;		type: void 
+   190                           ;		size: 0
+   191                           ; Registers used:
+   192                           ;		wreg, fsr0l, fsr1l, fsr2l, status,2, status,0
+   193                           ; Tracked objects:
+   194                           ;		On entry : 0/0
+   195                           ;		On exit  : 0/0
+   196                           ;		Unchanged: 0/0
+   197                           ; Data sizes:
+   198                           ;		Autos:    0
+   199                           ;		Params:   0
+   200                           ;		Temp:     1
+   201                           ;		Total:    1
+   202                           ; This function calls:
+   203                           ;		__delay
+   204                           ; This function is called by:
+   205                           ;		_main
+   206                           ; This function uses a non-reentrant model
+   207                           ; 
+   208  000000                     
+   209                           ;code.c: 7: asm("\tglobal __config" "1"); asm("\
+      +                          t__config" "1" " equ " "0xFFFF & 0xFEFF");
+   210                           ;code.c: 9: asm("\tglobal __config" "2"); asm("\
+      +                          t__config" "2" " equ " "0xFFFD & 0xFFFF & 0xFEFF
+      +                          ");
+   211                           ;code.c: 11: asm("\tglobal __config" "3"); asm("
+      +                          \t__config" "3" " equ " "0xFFFF");
+   212                           ;code.c: 13: asm("\tglobal __config" "4"); asm("
+      +                          \t__config" "4" " equ " "0xFF7F & 0xFFFF & 0xFFF
+      +                          F");
+   213                           ;code.c: 15: asm("\tglobal __config" "5"); asm("
+      +                          \t__config" "5" " equ " "0xFFFF");
+   214                           ;code.c: 16: asm("\tglobal __config" "6"); asm("
+      +                          \t__config" "6" " equ " "0xFFFF");
+   215  003FC8                     _delay_sec:
+   216                           	opt stack 30
+   217                           ; BSR set to: ?
+   218  003FC8  FFFF               	dw	65535
+   219                           ; delay_sec@seconds loaded to fsr1l
+   220  003FCA  CFE8 FFE1          	movff	wreg,fsr1l
+   221  003FCE  6AD9               	clrf	fsr2l,c
+   222  003FD0                     l104:
+   223  003FD0  FFFF               	dw	65535	; assembler added errata NOP
+   224                           ; BSR set to: ?
+   225  003FD2  50E1               	movf	fsr1l,w,c
+   226  003FD4  5CD9               	subwf	fsr2l,w,c
+   227  003FD6  E212               	bc	u60
+   228                           ; BSR set to: ?
+   229                           ;code.c: 26: for(j=0;j<100;j++)
+   230  003FD8  6AE9               	clrf	fsr0l,c
+   231  003FDA                     l105:
+   232  003FDA  FFFF               	dw	65535	; assembler added errata NOP
+   233                           ; BSR set to: ?
+   234                           ;code.c: 27: _delay((unsigned long)((10)*(400000
+      +                          00/4000.0)));
+   235  003FDC  0E62               	movlw	98
+   236  003FDE  0100               	movlb	0	; () banked
+   237  003FE0  6FFF               	movwf	??_delay_sec& (0+255),b
+   238  003FE2  0E76               	movlw	118
+   239  003FE4                     u727:
+   240  003FE4  FFFF               	dw	65535	; assembler added errata NOP
+   241  003FE6  2EE8               	decfsz	wreg,f,c
+   242  003FE8  D7FD               	goto	u727
+   243  003FEA  2FFF               	decfsz	??_delay_sec& (0+255),f,b
+   244  003FEC  D7FB               	goto	u727
+   245  003FEE  0004               	clrwdt	
+   246  003FF0  2AE9               	incf	fsr0l,f,c
+   247  003FF2  0E63               	movlw	99
+   248  003FF4  64E9               	cpfsgt	fsr0l,c
+   249  003FF6  D7F1               	goto	l105
+   250                           ; BSR set to: ?
+   251  003FF8  2AD9               	incf	fsr2l,f,c
+   252  003FFA  D7EA               	goto	l104
+   253  003FFC                     u60:
+   254                           ; BSR set to: ?
+   255                           ;code.c: 28: }
+   256                           ; BSR set to: ?
+   257  003FFC  0012               	return	
+   258  003FFE  FFFF               	dw	65535	; errata NOP
+   259  004000                     __end_of_delay_sec:
+   260                           	opt stack 0
+   261                           
+   262                           	psect	const
+   263                           ; =============== function _delay_sec ends =====
+      +                          =======
+   264  000000                     
+   265  000000                     
+   266                           
+   267                           	psect	param0
+   268  000000                     
+   269  000000                     
+   270                           fsr0l	equ	0xFE9
+   271                           wreg	equ	0xFE8
+   272                           fsr1l	equ	0xFE1
+   273                           fsr2l	equ	0xFD9
+
+
+HI-TECH Software PICC-18 Macro Assembler V9.65 build 7190 
+Symbol Table                                           Sun May 20 18:53:16 2012
+
+                   u60 3FFC                    l110 3FB4  
+                  l104 3FD0                    l105 3FDA  
+                  _RB0 007C08                    u727 3FE4  
+                  wreg 000FE8                   _main 3FAE  
+                 fsr0l 000FE9                   fsr1l 000FE1  
+                 fsr2l 000FD9                   start 0000  
+                ?_main 00FF                  status 000FD8  
+         __end_of_main 3FC8                 ??_main 00FF  
+        __activetblptr 000000                 _TRISB0 007C98  
+               __Ldata 000000           __mediumconst 0600  
+           __accesstop 0080      __end_of_delay_sec 4000  
+              __Hparam 0100                __Lparam 00FF  
+              __ramtop 0600          __Lmediumconst 0600  
+            _delay_sec 3FC8            __smallconst 0600  
+           ?_delay_sec 00FF               __Hparam0 0100  
+             __Lparam0 00FF           __Lsmallconst 0600  
+             __config1 00FEFF               __config2 00FEFD  
+             __config3 00FFFF               __config4 00FF7F  
+             __config5 00FFFF               __config6 00FFFF  
+             __config7 00FFFF            ??_delay_sec 00FF  
